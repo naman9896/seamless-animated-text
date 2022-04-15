@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+@keyframes geek {
+  from {
+    background-size: auto 100%;
+  }
+
+  to {
+    background-size: auto 200%;
+  }
+}
+
+h1 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20vh;
+  font-weight: 900;
+  letter-spacing: 0.5vw;
+  background: url("/images/text-bg.jpeg");
+  background-size: auto 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: geek 7s alternate-reverse infinite;
+}
